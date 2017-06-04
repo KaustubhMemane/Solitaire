@@ -15,7 +15,6 @@ class Deck {
         cardsInDeck = cards.toMutableList()
         Collections.shuffle(cardsInDeck)
     }
-
     private fun  getSuit(i: Int) = when(i/13)
         {
             0 -> "Clubs"
@@ -23,5 +22,4 @@ class Deck {
             2 -> "Hearts"
             else -> "Spades"
         }
-
 }
